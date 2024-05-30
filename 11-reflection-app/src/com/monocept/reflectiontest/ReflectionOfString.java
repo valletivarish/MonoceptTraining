@@ -18,9 +18,9 @@ public class ReflectionOfString {
 				System.out.println(constructor.toString() + "\t" + constructor.getParameterCount());
 			}
 			
-//			for(Method method:methods) {
-//				System.out.println(method.getName());
-//			}
+			for(Method method:methods) {
+				System.out.println(method.getName());
+			}
 		} catch (ClassNotFoundException e) {
 		
 			e.printStackTrace();
