@@ -1,0 +1,35 @@
+package com.monocept.enums;
+
+public class Season {
+	enum Months{
+		January, February, March, April, May, June, July, August, September, October, November, December;
+			Months()
+		{
+		    System.out.println("Constructor called for : "
+		                       + this);
+		}
+	}
+	public static void main(String[] args) {
+
+		Months month=Months.July;
+		switch(month){
+		case December:
+		case January:
+		case February: System.out.println("Winter");
+		break;
+		case March:
+		case April:
+		case May: System.out.println("Summer");
+		break;
+		case June: 
+		case July:
+		case August: System.out.println("Monsoon");
+		break;
+		case September:
+		case October:
+		case November: System.out.println("Post-monsoon");
+	}
+
+	}
+
+}

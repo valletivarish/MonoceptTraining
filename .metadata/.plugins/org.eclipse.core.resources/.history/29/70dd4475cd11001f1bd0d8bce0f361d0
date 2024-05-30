@@ -1,0 +1,43 @@
+package com.monocept.assignment;
+
+import java.util.Scanner;
+
+public class PigGame {
+
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		int totalScore=0;
+		int score=0;
+		int turns=0;
+		System.out.println("Game Rules : \n1)See how many turns it takes you to get to 20.\n2)Turn ends when you hold or roll a 1.\n3)If you roll a 1, you lose all points for the turn.\n4)If you hold, you save all points for the turn.");
+		System.out.println("\nStart game");
+		System.out.println("\nPlease enter 'h' for hold or r for roll");
+		while(totalScore<=20) {
+			String option=scanner.nextLine();
+			if (option.equalsIgnoreCase("r")) {
+				int rollDice=(int)(Math.random()*(6-1))+1;
+				System.out.println("Die : "+rollDice);
+				if(rollDice!=1) {
+					score+=rollDice;
+					}
+				else {
+				turns+=1;
+				System.out.println("Turn over. No score.");
+				score=0;
+				}
+			}
+			else if(option.equalsIgnoreCase("h")) {
+				totalScore+=score;
+				turns+=1;
+				System.out.println("Score for turn "+turns+":" + score+ "\nTotal score: " + totalScore);
+				score=0;
+			}
+			else {
+				System.out.println("Please enter 'h' for hold or 'r' for roll");
+			}
+		}
+		System.out.println("\nCongrulations\nYou Finished in "+turns+" turns");
+		
+	}
+
+}

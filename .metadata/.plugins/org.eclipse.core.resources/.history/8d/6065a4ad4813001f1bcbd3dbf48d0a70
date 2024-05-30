@@ -1,0 +1,44 @@
+package com.monocept.arrays;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class PickElement {
+
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter the size of the array:");
+		int n=scanner.nextInt();
+		int array[];
+		array=new int[n];
+		for(int i=0;i<n;i++) {
+			array[i]=scanner.nextInt();
+		}
+		int i=0;
+		int prev=0;
+		int next=0;
+		int resultantArray[]=new int[n];
+		if (array[0]>array[1]) {
+			resultantArray[i]=array[0];
+			i++;
+		}
+		if (array[n-1]>array[n-2]) {
+			resultantArray[i]=array[n-1];
+		}
+		int j=1;
+		while(j<(array.length-1){
+			prev=array[j-1];
+			next=array[j+1];
+			if(array[j]>prev && array[j]>next) {
+				resultantArray[i]=array[j];
+				i++;
+			}
+		}
+		System.out.println("Result: "+Arrays.toString(resultantArray));
+		
+
+		
+
+	}
+
+}

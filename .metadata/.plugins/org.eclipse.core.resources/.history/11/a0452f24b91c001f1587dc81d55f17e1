@@ -1,0 +1,46 @@
+package com.monocept.model;
+
+public class UserCredentials {
+    private final String userName;
+    private final String password;
+    private final String email;
+
+    public UserCredentials(String userName, String password, String email) {
+        this.userName = userName;
+        this.password = password;
+        this.email = email;
+    }
+
+    public boolean isUserNameValid() {
+        return isNotNullOrEmpty(userName) && isLengthWithinRange(userName, 3, 20);
+    }
+
+    public boolean isPasswordValid() {
+        return isNotNullOrEmpty(password) && isLengthWithinRange(password, 8, 30);
+    }
+
+    public boolean isEmailValid() {
+        if (isNotNullOrEmpty(email)) {
+            boolean containsAt = false;
+            boolean containsDot = false;
+            for (int i = 0; i < email.length(); i++) {
+                if (email.charAt(i) == '@') {
+                    containsAt = true;
+                }
+                if (email.charAt(i) == '.') {
+                    containsDot = true;
+                }
+            }
+            return containsAt && containsDot;
+        }
+        return false;
+    }
+
+    private boolean isNotNullOrEmpty(String value) {
+        return value != null && !value.isEmpty();
+    }
+
+    private boolean isLengthWithinRange(String value, int minLength, int maxLength) {
+        return value.length() >= minLength && value.length() <= maxLength;
+    }
+}

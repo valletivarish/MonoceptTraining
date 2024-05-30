@@ -1,0 +1,11 @@
+package com.monocept.model;
+
+public class Person {
+	String name;
+	int age;
+	int rollnumber;
+	
+	void displayStudents() {
+		sysout
+	}
+}

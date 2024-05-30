@@ -1,0 +1,23 @@
+package com.monocept.enums;
+
+public class LaptopPrices {
+	
+	enum Laptop{
+		Macbook(2000), Windows(1000), XPS(2200), Surface(1800), ThinkPad(1500);
+		
+		private int price;
+		Laptop(int price) {
+			this.price=price;
+		}
+		
+		
+	}
+
+	public static void main(String[] args) {
+		
+		for(Laptop lap: Laptop.values()) {
+			System.out.println(lap+" : "+lap.price);
+		}
+	}
+
+}

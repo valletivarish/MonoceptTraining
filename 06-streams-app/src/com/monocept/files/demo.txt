@@ -1,0 +1,2 @@
+this is the demo of file reading
+this is to check the no of letters, words, lines

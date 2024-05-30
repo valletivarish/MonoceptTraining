@@ -1,0 +1,43 @@
+package com.monocept.model;
+
+public class Complex {
+	private int real;
+	private int imaginary;
+	private int sumReal;
+	private int sumImaginary;
+	
+	public Complex() {
+		this(1,1);
+	}
+
+	public Complex(int real, int imaginary) {
+		this.real=real;
+		this.imaginary=imaginary;
+	}
+	public Complex(int real) {
+		this(real,1);
+	}
+	
+	public void setReal(int real) {
+		this.real=real;
+	}
+	public int getReal() {
+		return real;
+	}
+	public void setImaginary(int imaginary) {
+		this.imaginary=imaginary;
+	}
+	public int getImaginary() {
+		return imaginary;
+	}
+	
+	public void setRealAndImaginary(Complex complexNumber1, Complex complexNumber2) {
+		sumReal=complexNumber1.real+complexNumber2.real;
+		sumImaginary=complexNumber1.imaginary+complexNumber2.imaginary;
+	}
+	
+	public String displayResult() {
+		return sumReal+"+"+sumImaginary+"i";
+	}
+	
+}

@@ -1,0 +1,37 @@
+package com.monocept.model;
+
+public class InputValidator {
+    private final String userName;
+    private final String password;
+    private final String email;
+
+    public InputValidator(String userName, String password, String email) {
+        this.userName = userName;
+        this.password = password;
+        this.email = email;
+    }
+
+    public boolean isUserNameValid() {
+        return isNotNullOrEmpty(userName) && isLengthWithinRange(userName, 3, 20);
+    }
+
+    public boolean isPasswordValid() {
+        return isNotNullOrEmpty(password) && isLengthWithinRange(password, 8, 30);
+    }
+
+    public boolean isEmailValid() {
+        return isNotNullOrEmpty(email) && isLengthWithinRange(email, 5, 50) && checkEmailFormat(email);
+    }
+
+    private boolean checkEmailFormat(String email) {
+        return email.contains("@") && email.contains(".") && email.indexOf("@") < email.lastIndexOf(".");
+    }
+
+    private boolean isNotNullOrEmpty(String value) {
+        return value != null && !value.isEmpty();
+    }
+
+    private boolean isLengthWithinRange(String value, int minLength, int maxLength) {
+        return value.length() >= minLength && value.length() <= maxLength;
+    }
+}

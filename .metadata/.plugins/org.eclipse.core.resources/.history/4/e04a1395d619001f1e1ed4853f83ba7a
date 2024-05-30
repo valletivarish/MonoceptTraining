@@ -1,0 +1,16 @@
+
+public class PassByValue {
+
+	public static void main(String[] args) {
+		int a=0;
+		System.out.println(passByValue(a));
+
+	}
+
+	private static int passByValue(int a) {
+		a=1;
+		return a;
+		
+	}
+
+}

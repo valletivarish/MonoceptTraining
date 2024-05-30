@@ -1,0 +1,39 @@
+package com.monocept.test;
+
+import com.monocept.model.InputValidator;
+
+public class InputValidatorTest {
+
+	public static void main(String[] args) {
+		InputValidator user1= new InputValidator("knight","12345678","abc@gmail.com");
+		
+		validateUser(user1);
+
+	}
+
+	private static void validateUser(InputValidator user1) {
+		String userName=user1.getUserName();
+		if(!userName.isEmpty() && !userName.equals(null) && (userName.length()>=3 && userName.length()<=20)){
+			System.out.println("username is valid");
+		}
+		validatePassword(user1);
+		
+	}
+
+	private static void validatePassword(InputValidator user1) {
+		String userPassword=user1.getPassword();
+		if(!userPassword.isEmpty() && !userPassword.equals(null) && (userPassword.length()>=8 && userPassword.length()<=30)){
+			System.out.println("password is valid");
+		}
+		validateEmail(user1);
+		
+	}
+
+	private static void validateEmail(InputValidator user1) {
+		String userEmail=user1.getEmail();
+		if(userEmail.contains("@") && userEmail.contains(".")){
+			System.out.println("email is valid");
+		}
+	}
+
+}

@@ -1,0 +1,42 @@
+package com.monocept.test;
+
+import java.util.Scanner;
+
+import com.monocept.model.Account;
+
+public class AccountTest {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		Account account1 = new Account();
+		System.out.println("Enter the details of first account : ");
+		System.out.println("Enter the account number : ");
+		long accountNumber=scanner.nextLong();
+		System.out.println("Enter the account type : ");
+		String accountType=scanner.next();
+		System.out.println("Enter the account name : ");
+		String accountName=scanner.next();
+		System.out.println("Enter the account balance  : ");
+		double accountBalance=scanner.nextDouble();
+		account1.accountIntialize(accountNumber, accountType, accountName,accountBalance);
+		account1.displayDetails();
+		System.out.println("\n");
+		
+		Account account2 = new Account();
+		System.out.println("Enter the details of first account : ");
+		System.out.println("Enter the account number : ");
+		accountNumber=scanner.nextLong();
+		System.out.println("Enter the account type : ");
+		accountType=scanner.next();
+		System.out.println("Enter the account name : ");
+		accountName=scanner.next();
+		System.out.println("Enter the account balance  : ");
+		accountBalance=scanner.nextDouble();
+		account2.accountIntialize(accountNumber, accountType, accountName,accountBalance);
+		account2.displayDetails();
+		
+		
+
+	}
+
+}

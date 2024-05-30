@@ -1,0 +1,17 @@
+package com.monocept.model;
+
+public class Student {
+	int rollnumber;
+	String name;
+	int age;
+	void studentIntialize() {
+		 rollnumber=10;
+		name="dbah";
+		age=10;
+	}
+	public void displayStudent() {
+		System.out.println("student's rollnumber : "+rollnumber);
+		System.out.println("student's name : "+name);
+		System.out.println("student's age : "+age);
+	}
+}

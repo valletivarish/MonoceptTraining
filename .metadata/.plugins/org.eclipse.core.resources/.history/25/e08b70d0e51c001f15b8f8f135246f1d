@@ -1,0 +1,30 @@
+package com.monocept.model;
+
+public class InputValidator {
+   
+    public static boolean inputValidation(String input,int minLength,int maxLength) {
+    	if(input==null || input=="" || input.length()<minLength || input.length()>maxLength)
+    		return false;
+    	return true;
+    }
+    public static boolean isUserNameValid(String username) {
+    	if (!inputValidation(username,3,20)) 
+    		return false;
+    	return true;
+    }
+    public static boolean isPasswordValid(String password) {
+    	if (!inputValidation(password,8,30)) 
+    		return false;
+    	return true;
+    }
+    public static boolean isEmailValid(String email) {
+    	if (!inputValidation(email,5,50) || !checkCharacter(email)) 
+    		return false;
+    	return true;
+    }
+    private static boolean checkCharacter(String email) {
+        if (!email.contains("@") || !email.contains(".")) 
+            return false;
+        return true;
+    }
+}

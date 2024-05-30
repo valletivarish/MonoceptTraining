@@ -1,0 +1,45 @@
+package com.monocept.arrays;
+
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+public class AveragePair {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the size of the array: ");
+        int n = scanner.nextInt();
+        int array[] = new int[n];
+        int sum = 0;
+        int average;
+        System.out.println("Enter elements of array: ");
+        for (int i = 0; i < n; i++) {
+            array[i] = scanner.nextInt();
+            sum+=array[i];
+        }
+        average=sum/n;
+        
+
+        boolean pairFound = findAveragePair(array, average);
+
+        if (!pairFound) {
+            System.out.println("Not found any suitable pair");
+        }
+    }
+
+    private static boolean findAveragePair(int[] array, int target) {
+        Set<Integer> set = new HashSet<>();
+
+        for (int num : array) {
+            int complement = target - num;
+            if (set.contains(complement)) {
+                System.out.println("Resultant pair: ");
+                System.out.println(complement + " " + num);
+                return true;
+            }
+            set.add(num);
+        }
+        return false;
+    }
+}
