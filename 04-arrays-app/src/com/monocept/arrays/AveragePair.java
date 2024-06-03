@@ -8,7 +8,6 @@ public class AveragePair {
         int array[] = new int[n];
         int sum = 0;
         int average;
-        
         System.out.println("Enter elements of array: ");
         for (int i = 0; i < n; i++) {
             array[i] = scanner.nextInt();
@@ -16,7 +15,6 @@ public class AveragePair {
         }
         average=sum/n;
         quickSort(array, 0, n - 1);
-
         int left = 0, right = n - 1;
         boolean pairFound = false;
         while (left < right) {
@@ -32,7 +30,6 @@ public class AveragePair {
                 right--;
             }
         }
-
         if (pairFound) {
             System.out.println("pair of elements: "+pairFound);
         }
@@ -54,17 +51,14 @@ public class AveragePair {
         for (int j = low; j < high; j++) {
             if (arr[j] <= pivot) {
                 i++;
-
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
             }
         }
-
         int temp = arr[i + 1];
         arr[i + 1] = arr[high];
         arr[high] = temp;
-
         return i + 1;
     }
 }

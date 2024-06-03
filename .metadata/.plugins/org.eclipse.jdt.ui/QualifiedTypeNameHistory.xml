@@ -10,11 +10,22 @@
 <fullyQualifiedTypeName name="com.monocept.model.Point"/>
 <fullyQualifiedTypeName name="com.monocept.model.Rectangle"/>
 <fullyQualifiedTypeName name="com.monocept.model.Complex"/>
-<fullyQualifiedTypeName name="com.monocept.model.Account"/>
-<fullyQualifiedTypeName name="com.monocept.model.AccountType"/>
 <fullyQualifiedTypeName name="com.monocept.model.Student"/>
 <fullyQualifiedTypeName name="com.monocept.model.CourseType"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Constructor"/>
+<fullyQualifiedTypeName name="com.monocept.model.StaticDemo"/>
+<fullyQualifiedTypeName name="com.monocept.model.AccountCount"/>
+<fullyQualifiedTypeName name="com.monocept.model.AccountType"/>
+<fullyQualifiedTypeName name="com.monocept.model.Account"/>
+<fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
+<fullyQualifiedTypeName name="java.io.EOFException"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="com.monocept.model.Car"/>
+<fullyQualifiedTypeName name="com.monocept.model.AccountSavings"/>
+<fullyQualifiedTypeName name="com.monocept.model.AccountCurrent"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
 </qualifiedTypeNameHistroy>
