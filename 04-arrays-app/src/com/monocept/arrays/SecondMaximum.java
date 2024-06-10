@@ -9,8 +9,8 @@ public class SecondMaximum {
 		System.out.println("Enter the size of the array:");
 		int n=scanner.nextInt();
 		int array[]=new int[n];
-		int max=0;
-		int secondMax=0;
+		int max=array[0];
+		int secondMax=array[0];
 		System.out.println("Enter elements of array: ");
 		for(int i=0;i<array.length;i++) {
 			array[i]=scanner.nextInt();
