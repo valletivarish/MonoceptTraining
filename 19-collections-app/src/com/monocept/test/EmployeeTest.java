@@ -1,12 +1,12 @@
 package com.monocept.test;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.Collections;
 import java.util.List;
-import java.util.ListIterator;
 import java.util.Scanner;
 
 import com.monocept.model.Employee;
+import com.monocept.model.EmployeesComparator;
 
 public class EmployeeTest {
 
@@ -26,17 +26,23 @@ public class EmployeeTest {
 			Employee employee=new Employee(employeeId,employeeName,salary);
 			employees.add(employee);
 		}
+		Collections.sort(employees, new EmployeesComparator.EmployeesById());
+		System.out.println(employees);
+		Collections.sort(employees, new EmployeesComparator.EmployeesByName());
+		System.out.println(employees);
+		Collections.sort(employees, new EmployeesComparator.EmployeeBySalary());
+		System.out.println(employees);
 //		Iterator employeeIterator=employees.iterator();
 //		while(employeeIterator.hasNext()) {
 //			System.out.println(employeeIterator.next());
 //		}
-		ListIterator employeeListIterator=employees.listIterator();
+//		ListIterator employeeListIterator=employees.listIterator();
 //		while(employeeListIterator.hasNext()) {
 //			System.out.println(employeeListIterator.next());
 //		}
-		while(employeeListIterator.hasPrevious()) {
-			System.out.println(employeeListIterator.previous());
-		}
+//		while(employeeListIterator.hasPrevious()) {
+//			System.out.println(employeeListIterator.previous());
+//		}
 
 	}
 
