@@ -14,7 +14,7 @@ public class AccountTest {
         IAccount account = null;
         boolean isExit = false;
         while (!isExit) {
-            System.out.println("Choose options : \n1. Account Creation \n2. Credit \n3. Debit \n5. Exit");
+            System.out.println("Choose options : \n1. Account Creation \n2. Credit \n3. Debit \n4. display details \n5. Exit");
             int choosedOption = scanner.nextInt();
             switch (choosedOption) {
                 case 1:
@@ -31,6 +31,7 @@ public class AccountTest {
                     break;
                 case 4:
                 	displayDetails(account);
+                	break;
                 case 5:
                     isExit = true;
                     break;

@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.Map.Entry"/>
-<fullyQualifiedTypeName name="java.util.PriorityQueue"/>
-<fullyQualifiedTypeName name="java.util.Iterator"/>
-<fullyQualifiedTypeName name="com.monocept.model.EmployeeByName"/>
-<fullyQualifiedTypeName name="com.monocept.model.EmployeesComparator.EmployeesByName"/>
-<fullyQualifiedTypeName name="com.monocept.model.EmployeesComparator.EmployeeBySalary"/>
-<fullyQualifiedTypeName name="com.monocept.model.EmployeesComparator.EmployeesById"/>
-<fullyQualifiedTypeName name="com.monocept.model.InsurancePolicyComparator.sortByName"/>
-<fullyQualifiedTypeName name="java.util.Collections"/>
-<fullyQualifiedTypeName name="com.monocept.model.InsurancePolicyComparator"/>
-<fullyQualifiedTypeName name="com.monocept.model.InsurancePolicyComparator.sortBydate"/>
-<fullyQualifiedTypeName name="com.monocept.model.InsurancePolicyComparator.sortByAmount"/>
-<fullyQualifiedTypeName name="com.monocept.model.Caller"/>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
-<fullyQualifiedTypeName name="java.lang.Thread.State"/>
-<fullyQualifiedTypeName name="com.monocept.model.Consumer"/>
 <fullyQualifiedTypeName name="java.lang.Runtime"/>
 <fullyQualifiedTypeName name="java.util.concurrent.ExecutorService"/>
 <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
@@ -31,7 +15,6 @@
 <fullyQualifiedTypeName name="com.monocept.model.ConstructorReference"/>
 <fullyQualifiedTypeName name="java.util.stream.Stream"/>
 <fullyQualifiedTypeName name="java.util.Comparator"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
 <fullyQualifiedTypeName name="com.monocept.srp.solution.InvoicePrinter"/>
@@ -60,4 +43,21 @@
 <fullyQualifiedTypeName name="com.monocept.creational.factory.model.AccountManager"/>
 <fullyQualifiedTypeName name="com.monocept.creational.factory.model.CurrentAccount"/>
 <fullyQualifiedTypeName name="com.monocept.creational.factory.model.SavingsAccount"/>
+<fullyQualifiedTypeName name="com.monocept.builder.model.Person"/>
+<fullyQualifiedTypeName name="com.monocept.builder.model.Person.PersonBuilder"/>
+<fullyQualifiedTypeName name="com.monocept.creational.abstractfactory.model.ICar"/>
+<fullyQualifiedTypeName name="com.monocept.creational.abstractfactory.model.ICarFactory"/>
+<fullyQualifiedTypeName name="com.monocept.creational.abstractfactory.model.MarutiFactory"/>
+<fullyQualifiedTypeName name="com.monocept.structural.facade.model.IMenu"/>
+<fullyQualifiedTypeName name="com.monocept.structural.adaptar.model.Biscuit"/>
+<fullyQualifiedTypeName name="com.monocept.structural.adaptar.model.Chocolate"/>
+<fullyQualifiedTypeName name="com.monocept.structural.adaptar.model.Hat"/>
+<fullyQualifiedTypeName name="com.monocept.structural.adaptar.model.HatAdapter"/>
+<fullyQualifiedTypeName name="com.monocept.structural.decorator.model.GoldenHat"/>
+<fullyQualifiedTypeName name="com.monocept.creational.observer.model.Account"/>
+<fullyQualifiedTypeName name="com.monocept.creational.observer.model.EmailNotifier"/>
+<fullyQualifiedTypeName name="com.monocept.creational.observer.model.SmsNotifier"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
