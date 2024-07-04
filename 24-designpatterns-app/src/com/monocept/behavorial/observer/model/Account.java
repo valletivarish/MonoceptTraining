@@ -1,4 +1,4 @@
-package com.monocept.creational.observer.model;
+package com.monocept.behavorial.observer.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,22 +57,22 @@ public class Account {
 	}
 
 	public void registerNotification(INotifier notifier) {
-		boolean found = false;
 		for (INotifier notify : notifiers) {
 			if (notify.getClass().equals(notifier.getClass())) {
-				found = true;
-				break;
+				throw new NotifierExistingException("Already notifier existed");
 			}
 		}
-		if (!found) {
-			notifiers.add(notifier);
-		}
-
+		notifiers.add(notifier);
 	}
 
-	public void deRegisterNotification() {
-		notifiers.clear();
-		System.out.println("Notifications Cleared");
+	public void deRegisterNotification(INotifier notifier) {
+		for(INotifier notify:notifiers) {
+			if(notify.getClass().equals(notifier.getClass())) {
+				notifiers.remove(notifier);
+				return;
+			}	
+		}
+		throw new NotifierExistingException("Cannot remove notifier which doesn't exist");
 	}
 
 	@Override

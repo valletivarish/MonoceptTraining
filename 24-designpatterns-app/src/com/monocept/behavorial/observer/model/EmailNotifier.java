@@ -1,4 +1,4 @@
-package com.monocept.creational.observer.model;
+package com.monocept.behavorial.observer.model;
 
 public class EmailNotifier implements INotifier {
 
